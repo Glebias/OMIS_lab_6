@@ -148,31 +148,3 @@ class Model(Base):
     def __repr__(self):
         return f"<Model {self.name} ({self.type})>"
 ```
-
-## Setup Instructions
-
-1. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Configure the Database**:
-   - Update the database connection settings in [`database.py`](backend/database.py) to match your environment.
-
-3. **Run the Application**:
-   ```bash
-   uvicorn main:app --reload
-   ```
-
-4. **Access the API**:
-   - The API will be available at `http://127.0.0.1:8000`.
-   - Use tools like Postman or the interactive API docs (`/docs`) to test endpoints.
-
-## Development
-
-- **Testing**:
-  - Write unit tests for models, schemas, and services.
-  - Use tools like `pytest` for testing.
-
-- **Documentation**:
-  - Keep the [`README.md`](backend/README.md) and API documentation up to date with changes to the project.
